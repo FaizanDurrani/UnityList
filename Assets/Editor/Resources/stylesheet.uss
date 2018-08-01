@@ -1,0 +1,119 @@
+#topMenu {
+	flex-direction: row;
+	background-color: #3C3C3C;
+	margin-right: 0;
+}
+
+#topMenu TextField{
+	flex-grow: 1;
+	font-size: 17px;
+	background-image: none;
+	background-color: #767676;
+	border-left: 0;
+	text-color: #e3e3e3;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: 0;
+	text-alignment:middle-left;
+}
+
+#topMenu Label {
+	font-size: 20px;
+	text-color: #e3e3e3;
+}
+
+#topMenu Button{
+	background-image: none;
+	font-size: 17px;
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-right: 0;
+	margin-left: 0;
+	text-color: #e3e3e3;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#topMenu Button:hover{
+	background-image:none;
+	background-color: #7a7a7a;
+	text-color: #fff;
+}
+
+#topMenu Button:active {
+	background-image: none;
+	background-color: #676767;
+}
+
+#itemsList{
+	flex-direction: column;
+	flex-grow: 1;
+}
+#itemsList .itemContainer{
+	flex-direction: row;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	background-color: #D2D2D2;
+}
+#itemsList .itemDetails{
+	flex: 1;
+	flex-grow: 1;
+	flex-direction: column;
+	background-color: #E2E2E2;
+}
+#itemsList .itemTitle {
+	font-size: 18px;
+	text-color: #000000;
+	font-style: bold;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+#itemsList .itemDescription {
+	word-wrap: true;
+	/*padding-right: 105px;*/
+	/*flex-grow: 1;*/
+	font-size: 14px;
+
+}
+#itemsList .itemImage{
+	width: 100;
+	height: 100;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+
+}
+#itemsList .itemAuthor{
+	font-size: 12px;
+	margin-top: 0;
+}
+#itemsList .itemActionButtons{
+	flex-direction: row;
+	background-color: #D2D2D2;
+}
+#itemsList .itemActionButtons Button{
+	
+	background-image: none;
+	font-size: 17px;
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-right: 0;
+	margin-left: 0;
+	text-color: #000;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#itemsList .itemActionButtons Button:hover{
+	background-image:none;
+	background-color: #7a7a7a;
+	text-color: #fff;
+}
+
+#itemsList .itemActionButtons Button:active {
+	background-image: none;
+	background-color: #676767;
+}
