@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Linq;
-using UnityEngine;
 
-namespace Base36Encoder
+namespace Editor
 {
     public static class Base36
     {

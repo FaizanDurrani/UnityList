@@ -58,9 +58,10 @@
     <Compile Include="Assets\Editor\Base36.cs" />
     <Compile Include="Assets\Editor\UnityListApi.cs" />
     <Compile Include="Assets\Editor\UnityListEditor.cs" />
+    <Compile Include="Assets\Editor\UnityListFile.cs" />
+    <Compile Include="Assets\Editor\UnityListFileDownloadHandler.cs" />
     <Compile Include="Assets\Editor\UnityListItem.cs" />
     <None Include="Assets\Editor\Resources\stylesheet.uss" />
-    <None Include="Assets\Editor\Resources\test.uxml" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/Unity Projects/UnityList/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

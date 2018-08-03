@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.Networking;
 
-namespace DefaultNamespace
+namespace Editor
 {
     public class UnityListSearchApi
     {
@@ -41,7 +38,7 @@ namespace DefaultNamespace
             {
                 if (!asyncReq.isDone) Debug.LogError("Error while fetching items from UnityList");
 
-                var result = JsonConvert.DeserializeObject<UnityListSearchApiResult>(request.downloadHandler.text);
+                UnityListSearchApiResult result = JsonConvert.DeserializeObject<UnityListSearchApiResult>(request.downloadHandler.text);
                 if (Result == null)
                     Result = result;
                 else
@@ -86,23 +83,6 @@ namespace DefaultNamespace
 
     public class UnityListSearchApiResultEntry
     {
-        /*{
-          "id": "9692",
-          "createdAt": "2016-10-12T08:05:52Z",
-          "author": "nmaarse",
-          "type": "github",
-          "title": "Unity3D Rift Hello World",
-          "lang": null,
-          "slug": "Unity3D-Rift-Hello-World",
-          "tags": {
-            "lvl1": [
-              "projects"
-            ]
-          },
-          "desc": "first try to make a simple unity3d application that renders in the rift",
-          "updatedAt": "2016-10-13T12:42:33Z"
-        }*/
-
         [JsonProperty("id")] private string _id;
 
         public int Id

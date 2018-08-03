@@ -1,15 +1,10 @@
-﻿using System;
-using System.ComponentModel;
-using System.IO;
-using System.Net;
-using Base36Encoder;
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEngine;
 using UnityEngine.Experimental.UIElements;
 using UnityEngine.Experimental.UIElements.StyleSheets;
 using UnityEngine.Networking;
 
-namespace DefaultNamespace
+namespace Editor
 {
     public class UnityListItem
     {
@@ -75,16 +70,14 @@ namespace DefaultNamespace
 
         private void Download()
         {
+            var url = "https://unitylist.com/api/get?download&id=" + _entry.Id;
+            
             var path = EditorUtility.OpenFolderPanel("Select Folder", Application.dataPath, _entry.Title);
             Debug.Log(path);
             EditorUtility.ClearProgressBar();
             if (path.Length <= 1) return;
-            UnityListEditor.Download(_entry.Title + ".zip", path + "/" + _entry.Title + ".zip", "http://unitylist.com/api/get?download&id=" + _entry.Id);
-        }
 
-        private void WcOnDownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
-        {
-            Debug.Log("Done");
+            UnityListEditor.Download(_entry.Title + ".zip", path, url);
         }
 
         private void LoadImage(Image image)
