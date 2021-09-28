@@ -1,3 +1,9 @@
+# About UNITY 
+ Unity is a cross-platform game engine developed by Unity Technologies, first announced and released in June 2005 at Apple Inc.'s Worldwide Developers Conference as a Mac OS X-exclusive game engine.
+
+
+
+
 # UnityList
 Editor extension to search and download projects from https://UnityList.com/
 
